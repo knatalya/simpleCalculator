@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link type="Image/x-icon" href="icon.ico" rel="icon">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+    <title>Простой калькулятор</title>
+</head>
+<body>
+    <main class="container">
+        <h1 class="header">{{ header }}</h1>
+        <h2 class="result">{{ string }}</h3>
+        <ul class="calc">
+            <li v-for="calc in calcs" @click="calculate(calc)">{{ calc }}</li>
+        </ul>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
